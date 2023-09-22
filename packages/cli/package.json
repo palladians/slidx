@@ -2,8 +2,19 @@
   "name": "@slidx/cli",
   "module": "src/index.ts",
   "type": "module",
+  "scripts": {
+    "start": "bun src/cli.ts"
+  },
+  "bin": "cli",
+  "files": [
+    "cli"
+  ],
   "devDependencies": {
     "bun-types": "latest"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "execa": "^8.0.1"
   },
   "peerDependencies": {
     "typescript": "^5.2.2"
