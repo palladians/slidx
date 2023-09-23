@@ -5,7 +5,7 @@ export const Footer = () => {
   const year = new Date().getFullYear()
   return (
     <div className="flex flex-col gap-12 bg-background">
-      <footer className="container grid grid-cols-[2fr_1fr_1fr] justify-between gap-8">
+      <footer className="container grid grid-cols-1 lg:grid-cols-[2fr_1fr_1fr] justify-between gap-8">
         <div className="flex flex-col gap-4">
           <span className="text-xl font-semibold">Acme</span>
           <p>Yet another million dolar SaaS idea.</p>

@@ -1,7 +1,8 @@
 import { StoryDefault } from '@ladle/react'
-import { CallToAction } from ".";
+import { Buttons as CallToActionButtons, Email as CallToActionEmail } from ".";
 
-export const Basic = () => <CallToAction />
+export const Buttons = () => <CallToActionButtons />
+export const Email = () => <CallToActionEmail />
 
 export default {
   title: "Call To Action",

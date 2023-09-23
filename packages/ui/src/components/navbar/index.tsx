@@ -16,11 +16,12 @@ export const Navbar = () => {
           <Button variant="link">About</Button>
           <Button variant="link">Contact</Button>
         </div>
-        <div className="hidden md:flex items-center">
-          <Button size="sm">Dashboard</Button>
+        <div className="hidden md:flex items-center gap-4">
+          <Button variant="link">Support</Button>
+          <Button className="rounded-full">Dashboard</Button>
         </div>
         <div className="flex md:hidden items-center">
-          <Button size="sm">
+          <Button size="sm" variant="outline">
             <MenuIcon size={16} />
           </Button>
         </div>
