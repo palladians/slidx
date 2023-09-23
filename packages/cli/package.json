@@ -1,15 +1,15 @@
 {
   "name": "@slidx/cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "module": "src/index.ts",
   "type": "module",
   "scripts": {
     "start": "bun src/cli.ts",
-    "build": "bun build --compile src/cli.ts --outfile=cli"
+    "build": "bun build --minify --splitting --outdir=dist --target=node ./src/cli.ts"
   },
-  "bin": "cli",
+  "bin": "dist/cli.js",
   "files": [
-    "cli"
+    "dist"
   ],
   "devDependencies": {
     "bun-types": "latest"
