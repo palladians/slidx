@@ -1,18 +1,20 @@
 {
   "name": "@slidx/cli",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "module": "src/index.ts",
   "type": "module",
   "scripts": {
     "start": "bun src/cli.ts",
-    "build": "bun build --outdir=dist --target=node ./src/cli.ts"
+    "build": "tsup && chmod +x dist/cli.js"
   },
   "bin": "dist/cli.js",
   "files": [
     "dist"
   ],
   "devDependencies": {
-    "bun-types": "latest"
+    "@tsconfig/strictest": "^2.0.2",
+    "bun-types": "latest",
+    "tsup": "^7.2.0"
   },
   "dependencies": {
     "@clack/prompts": "^0.7.0",

@@ -1,5 +1,10 @@
 {
-    "name": "slidx",
-    "version": "0.0.1",
-    "workspaces": ["packages/*"]
+  "name": "slidx",
+  "version": "0.0.1",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "typescript": "^5.2"
   }
+}
