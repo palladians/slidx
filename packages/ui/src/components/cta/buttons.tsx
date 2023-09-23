@@ -9,8 +9,8 @@ export const CallToActionButtons = () => {
           <p className="text-accent-foreground max-w-[24rem] leading-7">Get in touch or create an account.</p>
         </div>
         <div className="flex gap-4">
-          <Button variant="secondary">Contact us</Button>
-          <Button>Create Account</Button>
+          <Button variant="secondary" className="whitespace-nowrap">Contact us</Button>
+          <Button className="whitespace-nowrap">Create Account</Button>
         </div>
       </div>
     </div>
